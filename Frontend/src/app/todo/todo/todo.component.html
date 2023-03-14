@@ -60,12 +60,12 @@
                 type="text"
                 class="input input-underline"
               />
-              <span class="error" [style.visibility]="hasError(description, 'required') ? 'visible' : 'hidden'">
+              <span class="error" [style.display]="hasError(description, 'required') ? 'block' : 'none'">
                 The field is required
               </span>
               <span
                 class="error"
-                [style.visibility]="hasError(description, 'disallowedWords') ? 'visible' : 'hidden'"
+                [style.display]="hasError(description, 'disallowedWords') ? 'block' : 'none'"
                 >The field includes disallowed word</span>
             </div>
 

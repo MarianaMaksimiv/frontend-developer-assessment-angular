@@ -10,10 +10,10 @@
         class="input input-underline"
       />
     </div>
-    <span class="error" [style.visibility]="hasError(form.get('description'), 'required') ? 'visible' : 'hidden'">
+    <span class="error" [style.display]="hasError(form.get('description'), 'required') ? 'block' : 'none'">
       The field is required</span>
     <span
-      class="error" [style.visibility]="hasError(form.get('description'), 'disallowedWords') ? 'visible' : 'hidden'"
+      class="error" [style.display]="hasError(form.get('description'), 'disallowedWords') ? 'block' : 'none'"
       >The field includes disallowed word</span
     >
   </form>
